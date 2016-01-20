@@ -1,5 +1,5 @@
 define([],
-function(Primes) {
+function() {
 
   // Implementations are ten-a-penny, but I enjoy the silliness of this one.
   // @see http://www.javascripter.net/math/primes/factorization.htm

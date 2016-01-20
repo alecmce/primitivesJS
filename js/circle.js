@@ -1,5 +1,5 @@
 define([
-  'primitive/svg'
+  'svg'
 ],
 function(Svg) {
   var TWO_PI = Math.PI * 2;

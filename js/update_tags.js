@@ -1,6 +1,6 @@
 define([
-  'primitive/svg',
-  'primitive/primitive'
+  'svg',
+  'primitive'
 ],
 function(Svg, Primitive) {
 

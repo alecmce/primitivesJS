@@ -1,13 +1,13 @@
 define([
-  'primitive/prime_factors',
-  'primitive/colors',
-  'primitive/circle',
-  'primitive/atom',
-  'primitive/two',
-  'primitive/three',
-  'primitive/five',
-  'primitive/seven',
-  'primitive/fibonacci'
+  'prime_factors',
+  'colors',
+  'circle',
+  'atom',
+  'two',
+  'three',
+  'five',
+  'seven',
+  'fibonacci'
 ],
 function(PrimeFactors, Colors, Circle, Atom, Two, Three, Five, Seven, Fibonacci) {
 
