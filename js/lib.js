@@ -27,6 +27,6 @@ function(Svg, PrimeFactors, Circle, Primitive, UpdateTags) {
     factors: PrimeFactors,
     make: make,
     updateTags: updateTags,
-    svg: svg
+    svg: Svg
   }
 });

@@ -32,7 +32,7 @@ function(PrimeFactors, Colors, Circle, Atom, Two, Three, Five, Seven, Fibonacci)
 
     return function make(factors) {
       factors = factors.reduce(function(list, factor) {
-        return list.concat(PrimeFactors(factor));
+        return factor == 1 ? list : list.concat(PrimeFactors(factor));
       }, []);
       return factors.reduce(function(node, factor) {
         return makeNode(factor, node);

@@ -1,10 +1,10 @@
 ({
     baseUrl: "js",
-    name: "lib",
+    include: ["ext/almond", "lib"],
     out: "bin/primitives.min.js",
+    removeCombined: true,
     wrap: {
-      start: "(function() {",
-      end: "return require('lib'); }());"
-    },
-    removeCombined: true
+      startFile: "js/_start.js",
+      endFile: "js/_end.js"
+    }
 })
