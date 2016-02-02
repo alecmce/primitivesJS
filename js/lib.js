@@ -14,11 +14,8 @@ function(Svg, PrimeFactors, Circle, Primitive, UpdateTags) {
   var updateTags = UpdateTags(makePrimitive);
 
   function make(input) {
-    if (input instanceof Array) {
-      return makePrimitive(input);
-    } else {
-      return makePrimitive(PrimeFactors(input));
-    }
+    var value = input instanceof Array ? input : PrimeFactors(input);
+    return makePrimitive(value);
   }
 
   updateTags();
