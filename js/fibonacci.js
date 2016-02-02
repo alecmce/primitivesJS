@@ -3,7 +3,7 @@ function() {
 
   var MULTIPLIER = 1.25;
   var PHI = (Math.sqrt(5) + 1) / 2;
-  var PHI_2PI = (PHI * 2) * Math.PI;
+  var PHI_2PI = PHI * 2 * Math.PI;
 
   return function Fibonacci(count, drawCircle, color, padding, child) {
     var offset = child.radius + padding / 2;
