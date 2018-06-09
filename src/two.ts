@@ -1,5 +1,6 @@
 import { DrawCircle } from "./circle";
 import { Item, ItemConfig } from "./item";
+import { Svg } from "./svg";
 
 export class Two implements Item {
   public readonly radius: number;
@@ -13,7 +14,7 @@ export class Two implements Item {
     this.radius = (4 * child.radius + 3 * padding) / 2;
   }
 
-  draw(config: ItemConfig) {
+  draw(config: ItemConfig): Svg {
     var offset = this.child.radius + this.padding / 2;
     var container = this.drawCircle({
       ...config,

@@ -1,5 +1,6 @@
 import { DrawCircle } from "./circle";
 import { Item, ItemConfig } from "./item";
+import { Svg } from "./svg";
 
 const SCALAR = Math.sqrt(2) / 2;
 
@@ -19,7 +20,7 @@ export class Five implements Item {
     this.delta = SCALAR * this.offset;
   }
 
-  draw(config: ItemConfig) {
+  draw(config: ItemConfig): Svg {
     var container = this.drawCircle({
       ...config,
       radius: this.radius,

@@ -1,5 +1,6 @@
 import { DrawCircle } from './circle';
 import { Item, ItemConfig } from './item';
+import { Svg } from './svg';
 
 const MULTIPLIER = 1.25;
 const PHI = (Math.sqrt(5) + 1) / 2;
@@ -27,7 +28,7 @@ export class Fibonacci implements Item {
     this.radius = Math.sqrt(count) * MULTIPLIER * this.offset + child.radius + padding;
   }
 
-  draw(config: ItemConfig) {
+  draw(config: ItemConfig): Svg {
     const { container, x, y } = config;
     const group = this.drawCircle({
       ...config,

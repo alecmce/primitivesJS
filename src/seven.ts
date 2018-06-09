@@ -1,5 +1,6 @@
 import { DrawCircle } from './circle';
 import { Item, ItemConfig } from './item';
+import { Svg } from './svg';
 
 var ANGLE = Math.PI / 3;
 
@@ -17,7 +18,7 @@ export class Seven implements Item {
     this.radius = this.offset + child.radius + padding;
   }
 
-  draw(config: ItemConfig) {
+  draw(config: ItemConfig): Svg {
     const container = this.drawCircle({
       ...config,
       radius: this.radius,
