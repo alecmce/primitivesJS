@@ -1,11 +1,12 @@
 {
   "name": "@alecmce/primitives",
   "description": "A small library for visualizing the prime factor decomposition of numbers.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "publish": "cd dist && npm publish --access=public"
   },
   "files": [
     "dist"
