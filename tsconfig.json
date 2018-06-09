@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "module": "system",
+    "declaration": true,
+    "target": "es5",
+    "module": "commonjs",
     "noImplicitAny": true,
-    "outFile": "bin/primitives.js",
+    "outDir": "./dist",
     "preserveConstEnums": true,
     "removeComments": true,
     "sourceMap": false
   },
   "include": [
-    "src/**/*"
+    "src/**/*.ts"
   ]
 }
