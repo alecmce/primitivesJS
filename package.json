@@ -1,16 +1,14 @@
 {
   "name": "@alecmce/primitives",
   "description": "A small library for visualizing the prime factor decomposition of numbers.",
-  "version": "0.3.0",
-  "main": "src/index.ts",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublish": "npm run build",
-    "publish": "cd dist && npm publish --access=public"
+    "publish": "npm publish --access=public"
   },
-  "files": [
-    "dist"
-  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/alecmce/primitivesJS.git"
