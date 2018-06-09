@@ -11,7 +11,11 @@ var drawCircle = makeCircle(OUTLINE_WIDTH);
 export function drawPrimitive(svg: SVGSVGElement, value: number | number[]) {
   const item = new Primitive(drawCircle, ATOM_RADIUS, ATOM_RADIUS, value);
   const container = makeContainer(svg, item);
-  item.draw({ container, x: 0, y: 0 });
+  item.draw({
+    container,
+    x: svg.clientWidth / 2,
+    y: svg.clientHeight / 2
+  });
 }
 
 function makeContainer(svg: SVGSVGElement, { radius }: Item) {
