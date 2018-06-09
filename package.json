@@ -1,5 +1,5 @@
 {
-  "name": "alecmce-primitivesjs",
+  "name": "@alecmce/primitives",
   "description": "A small library for visualizing the prime factor decomposition of numbers.",
   "version": "0.2.0",
   "main": "src/index.ts",
